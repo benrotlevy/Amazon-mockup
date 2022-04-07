@@ -1,0 +1,94 @@
+
+@media (min-width: 1200px) {
+
+    .nav-box {
+        &:hover {
+            border: #fff solid 1.5px;
+            cursor: pointer;
+        }
+    }
+
+    .main-nav-box {
+        height: 50px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .main-nav {
+        height: 60px;
+        background: #0f1111;
+        
+        .right-box {
+
+            height: 100%;
+            width: 270px;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                width: 113px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+            .deliver {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .addres {
+                    display: flex;
+                    flex-direction: column;
+                    .up {
+                        color: $grey;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                    .down {
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .main-box {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            width: 60vw;
+
+            .nav-search-dropdown {
+                font-size: 14px;
+                width: 52px;
+                background: #ccc;
+                border-radius: 4px 0 0 4px;
+                flex: 0;
+            }
+
+            .search-bar {
+                flex: 1;
+            }
+
+            .search-btn {
+                background: #FEBD69;
+                width: 45px;
+                flex: 0;
+                background-image: url(/Assets/Img/search-logo.jpg);
+            }
+        }
+        
+    }
+    
+    .sub-nav {
+        height: 39px;
+        background: #232f3e;
+    }
+}

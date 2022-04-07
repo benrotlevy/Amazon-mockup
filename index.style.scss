@@ -1,0 +1,18 @@
+@import 'colors';
+@import 'fonts';
+@import "./styles/footer/carousel/desktop", "./styles/footer/carousel/mobile";
+@import "./styles/footer/desktop", "./styles/footer/mobile";
+@import "./styles/main/desktop", "./styles/main/mobile";
+@import "./styles/main/side_navbar/desktop", "./styles/main/side_navbar/mobile";
+@import "./styles/navbar/desktop", "./styles/navbar/mobile";
+@import "./styles/subnavbar/desktop", "./styles/subnavbar/mobile";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
