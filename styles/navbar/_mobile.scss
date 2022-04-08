@@ -1,0 +1,44 @@
+@media (max-width: 1200px) {
+    
+    .navbar {
+        justify-content: space-between;
+
+        .left-box {
+            .logo .nav-box{
+                // width: 20px;
+            }
+            .deliver {
+                display: none;
+            }
+        }
+        .right-box {
+            .orders {
+                display: none;
+            }
+            .account {
+                display: none;
+            }
+            .state {
+                display: none;
+            }
+            .cart {
+                width: 4rem;
+            }
+        }
+        .main-box {
+            
+            .search-bar {
+                width: 150px;
+                flex: 0;
+            }
+
+            .search-btn {
+                display: none;
+            }
+
+            .nav-search-dropdown {
+                display: none;
+            }
+        }
+    }
+}

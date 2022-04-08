@@ -27,70 +27,105 @@
   font-family: "Amazon Ember";
   font-weight: 700;
   src: url(https://m.media-amazon.com/images/S/sash/KFPk-9IF4FqAqY-.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/mzVbGSgvdBfRLX9.woff) format("woff"); }
-@media (min-width: 1200px) {
+.nav-box {
+  height: 50px; }
   .nav-box:hover {
     border: #fff solid 1.5px;
     cursor: pointer; }
 
-  .main-nav-box {
-    height: 50px; }
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center; }
 
-  nav {
+.main-nav {
+  justify-content: space-around;
+  height: 60px;
+  background: #0f1111; }
+  .main-nav .left-box {
+    height: 100%;
+    width: 17%;
     display: flex;
-    flex-direction: row;
-    width: 100%;
     align-items: center; }
-
-  .main-nav {
-    height: 60px;
-    background: #0f1111; }
-    .main-nav .right-box {
+    .main-nav .left-box .logo {
+      width: 113px;
       height: 100%;
-      width: 270px;
       display: flex;
       align-items: center; }
-      .main-nav .right-box .logo {
-        width: 113px;
-        height: 100%;
-        display: flex;
-        align-items: center; }
-      .main-nav .right-box .deliver {
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .main-nav .right-box .deliver .addres {
-          display: flex;
-          flex-direction: column; }
-          .main-nav .right-box .deliver .addres .up {
-            color: #ccc;
-            font-size: 12px;
-            font-weight: 400; }
-          .main-nav .right-box .deliver .addres .down {
-            color: #fff;
-            font-size: 14px;
-            font-weight: 700; }
-    .main-nav .main-box {
+    .main-nav .left-box .deliver {
       display: flex;
-      flex-direction: row;
-      height: 40px;
-      width: 60vw; }
-      .main-nav .main-box .nav-search-dropdown {
-        font-size: 14px;
-        width: 52px;
-        background: #ccc;
-        border-radius: 4px 0 0 4px;
-        flex: 0; }
-      .main-nav .main-box .search-bar {
-        flex: 1; }
-      .main-nav .main-box .search-btn {
-        background: #FEBD69;
-        width: 45px;
-        flex: 0;
-        background-image: url(/Assets/Img/search-logo.jpg); }
+      align-items: center;
+      justify-content: center; }
+      .main-nav .left-box .deliver .addres {
+        display: flex;
+        flex-direction: column; }
+  .main-nav .up {
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 400; }
+  .main-nav .down {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700; }
+  .main-nav .main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    width: 60%; }
+    .main-nav .main-box .nav-search-dropdown {
+      font-size: 14px;
+      width: 52px;
+      background: #ccc;
+      border-radius: 4px 0 0 4px;
+      flex: 0; }
+    .main-nav .main-box .search-bar {
+      flex: 1; }
+    .main-nav .main-box .search-btn {
+      background: #FEBD69;
+      height: 100%;
+      width: 45px;
+      flex: 0;
+      background-image: url(/Assets/Img/search-logo.jpg);
+      background-repeat: no-repeat;
+      background-position: 5px 4px; }
+  .main-nav .right-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    width: 23%; }
+    .main-nav .right-box .nav-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
 
-  .sub-nav {
-    height: 39px;
-    background: #232f3e; } }
+@media (max-width: 1200px) {
+  .navbar {
+    justify-content: space-between; }
+    .navbar .left-box .deliver {
+      display: none; }
+    .navbar .right-box .orders {
+      display: none; }
+    .navbar .right-box .account {
+      display: none; }
+    .navbar .right-box .state {
+      display: none; }
+    .navbar .right-box .cart {
+      width: 4rem; }
+    .navbar .main-box .search-bar {
+      width: 150px;
+      flex: 0; }
+    .navbar .main-box .search-btn {
+      display: none; }
+    .navbar .main-box .nav-search-dropdown {
+      display: none; } }
+.sub-nav {
+  height: 39px;
+  background: #232f3e; }
+
 * {
   padding: 0;
   margin: 0;

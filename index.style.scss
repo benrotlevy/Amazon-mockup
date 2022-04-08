@@ -1,11 +1,17 @@
 @import 'colors';
 @import 'fonts';
-@import "./styles/footer/carousel/desktop", "./styles/footer/carousel/mobile";
-@import "./styles/footer/desktop", "./styles/footer/mobile";
-@import "./styles/main/desktop", "./styles/main/mobile";
-@import "./styles/main/side_navbar/desktop", "./styles/main/side_navbar/mobile";
-@import "./styles/navbar/desktop", "./styles/navbar/mobile";
-@import "./styles/subnavbar/desktop", "./styles/subnavbar/mobile";
+@import "./styles/footer/carousel/desktop";
+@import "./styles/footer/carousel/mobile";
+@import "./styles/footer/desktop";
+@import "./styles/footer/mobile";
+@import "./styles/main/desktop";
+@import "./styles/main/mobile";
+@import "./styles/main/side_navbar/desktop";
+@import "./styles/main/side_navbar/mobile";
+@import "./styles/navbar/desktop";
+@import "./styles/navbar/mobile";
+@import "./styles/subnavbar/desktop";
+@import "./styles/subnavbar/mobile";
 
 * {
     padding: 0;
