@@ -105,6 +105,8 @@ nav {
 @media (max-width: 1200px) {
   .navbar {
     justify-content: space-between; }
+    .navbar .left-box .logo {
+      margin-right: 50px; }
     .navbar .left-box .deliver {
       display: none; }
     .navbar .right-box .orders {
@@ -116,7 +118,8 @@ nav {
     .navbar .right-box .cart {
       width: 4rem; }
     .navbar .main-box .search-bar {
-      width: 150px;
+      margin-left: 50px;
+      width: 110px;
       flex: 0; }
     .navbar .main-box .search-btn {
       display: none; }
