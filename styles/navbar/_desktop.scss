@@ -2,6 +2,7 @@
 
 .nav-box {
     height: 50px;
+    color: #fff;
     &:hover {
         border: #fff solid 1.5px;
         cursor: pointer;
@@ -70,13 +71,14 @@ nav {
             background: #ccc;
             border-radius: 4px 0 0 4px;
             flex: 0;
-
+            border: none;
             // #select {
             //     border: #FEBD69 2px solid;
             // }
         }
 
         .search-bar {
+            border: none;
             flex: 1;
             // &:checked {
             //     .main-box {
@@ -86,6 +88,7 @@ nav {
         }
 
         .search-btn {
+            border: none;
             background: #FEBD69;
             height: 100%;
             width: 45px;
