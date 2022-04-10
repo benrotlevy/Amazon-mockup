@@ -63,7 +63,55 @@ main {
       width: 80%;
       display: flex; }
       main .panes .container .image-pane {
-        width: 60%; }
+        width: 60%;
+        display: flex;
+        flex-direction: row; }
+        main .panes .container .image-pane .image-container {
+          width: 100%;
+          height: 80%;
+          display: flex;
+          padding: 1.3rem; }
+          main .panes .container .image-pane .image-container .little {
+            height: 300px;
+            width: 40px; }
+            main .panes .container .image-pane .image-container .little .preview-1 {
+              width: 38px;
+              height: 50px;
+              background: url(/Assets/Img/little-1.jpg) no-repeat center center/cover;
+              border: rgba(0, 0, 0, 0.385) 1px solid;
+              margin-bottom: 0.6rem;
+              cursor: pointer; }
+              main .panes .container .image-pane .image-container .little .preview-1:hover {
+                border: #ffb514 1px solid;
+                box-shadow: 1px 1px 2px 1px #ffd814c5, -1px -1px 2px 1px #ffd814c5; }
+            main .panes .container .image-pane .image-container .little .preview-2 {
+              width: 38px;
+              height: 50px;
+              background: url(/Assets/Img/watch-2.jpg) no-repeat center center/cover;
+              border: rgba(0, 0, 0, 0.385) 1px solid;
+              margin-bottom: 0.6rem;
+              cursor: pointer; }
+              main .panes .container .image-pane .image-container .little .preview-2:hover {
+                border: #ffb514 1px solid;
+                box-shadow: 1px 1px 2px 1px #ffd814c5, -1px -1px 2px 1px #ffd814c5; }
+            main .panes .container .image-pane .image-container .little .preview-3 {
+              width: 38px;
+              height: 50px;
+              background: url(/Assets/Img/watch-3.jpg) no-repeat center center/cover;
+              border: rgba(0, 0, 0, 0.385) 1px solid;
+              margin-bottom: 1rem;
+              cursor: pointer; }
+              main .panes .container .image-pane .image-container .little .preview-3:hover {
+                border: #ffb514 1px solid;
+                box-shadow: 1px 1px 2px 1px #ffd814c5, -1px -1px 2px 1px #ffd814c5; }
+          main .panes .container .image-pane .image-container .big-pic {
+            width: 95%;
+            height: 100%;
+            text-align: center; }
+            main .panes .container .image-pane .image-container .big-pic .pic {
+              height: 100%;
+              background: url(/Assets/Img/watch-1.jpg) no-repeat center center;
+              margin-bottom: 10px; }
       main .panes .container .detailes-pane {
         width: 40%; }
         main .panes .container .detailes-pane .box {
@@ -133,10 +181,86 @@ main {
       main .panes .sale-pane .with-border {
         border: #ccc 1px solid;
         border-radius: 5px;
-        height: 70%;
+        height: 90%;
         width: 90%;
-        padding: 1rem; }
+        padding: 0 1.7rem; }
+        main .panes .sale-pane .with-border h2 {
+          font-size: 18px;
+          color: #007600; }
+        main .panes .sale-pane .with-border select {
+          border-radius: 10px;
+          font-size: 11px;
+          background: #e5e1e1;
+          color: #0f1111;
+          opacity: 0.8;
+          cursor: pointer; }
+        main .panes .sale-pane .with-border .round-btn {
+          width: 100%;
+          margin-bottom: 0.5rem;
+          padding: 0.5rem;
+          border-radius: 30px;
+          border: none;
+          cursor: pointer; }
+        main .panes .sale-pane .with-border .btn-cart {
+          background: #FFD814; }
+          main .panes .sale-pane .with-border .btn-cart:hover {
+            background: #ffc414; }
+        main .panes .sale-pane .with-border .btn-buy {
+          background: #FFA41C; }
+          main .panes .sale-pane .with-border .btn-buy:hover {
+            background: #ff991c; }
+        main .panes .sale-pane .with-border .border {
+          width: 100%;
+          height: 30px;
+          border-bottom: 1px rgba(0, 0, 0, 0.19) solid; }
+        main .panes .sale-pane .with-border .btn-list {
+          width: 100%;
+          text-align: start;
+          padding: 0.3rem;
+          cursor: pointer;
+          margin-top: 5px; }
+      main .panes .sale-pane .icons {
+        margin-top: 10px; }
+        main .panes .sale-pane .icons a {
+          display: inline-block;
+          width: 18px;
+          height: 15px;
+          background: url(/Assets/Img/_email_add_app_essential_icon.png) no-repeat center center/cover; }
+        main .panes .sale-pane .icons .facebook {
+          background: url(/Assets/Img/_facebook_social\ media_social_icon.png) no-repeat center center/cover; }
+        main .panes .sale-pane .icons .twitter {
+          background: url(/Assets/Img/_bird_tweet_twitter_twitter\ logo_icon.png) no-repeat center center/cover; }
+        main .panes .sale-pane .icons .pinterest {
+          background: url(/Assets/Img/_inspiration_pin_pinned_pinterest_social\ network_icon.png) no-repeat center center/cover; }
+        main .panes .sale-pane .icons button {
+          background: #fff;
+          margin-top: 10px;
+          border-radius: 5px;
+          padding: 0.3rem 1rem;
+          border: 1px #ccc solid; }
 
+@media (max-width: 1000px) {
+  main .panes {
+    height: 400vh;
+    flex-direction: column; }
+    main .panes .container {
+      flex-direction: column;
+      width: 100%;
+      height: 200vh; }
+      main .panes .container .image-pane {
+        width: 100%;
+        height: 100vw; }
+        main .panes .container .image-pane .image-container .big-pic .pic {
+          background: url(/Assets/Img/watch-1.jpg) no-repeat center center/cover; }
+      main .panes .container .detailes-pane {
+        width: 100%;
+        height: 100vh; }
+        main .panes .container .detailes-pane .down-down {
+          height: 10%; }
+    main .panes .sale-pane {
+      width: 100%; }
+      main .panes .sale-pane .with-border {
+        height: 33%; } }
 .nav-box {
   height: 50px;
   color: #fff; }
@@ -283,6 +407,7 @@ nav {
   box-sizing: border-box; }
 
 body {
-  font-family: amazon Ember; }
+  font-family: amazon Ember;
+  height: 300vh; }
 
 /*# sourceMappingURL=index.style.css.map */

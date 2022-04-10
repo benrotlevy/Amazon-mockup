@@ -1,0 +1,43 @@
+@media (max-width: 1000px) {
+    main {
+        .panes {
+            height: 400vh;
+            flex-direction: column;
+            // justify-content: center;
+    
+            .container {
+                flex-direction: column;
+                width: 100%;
+                height: 200vh;
+
+                .image-pane {
+                    width: 100%;
+                    height: 100vw;
+                    .image-container {
+                        .big-pic {
+                            .pic {
+                                background: url(/Assets/Img/watch-1.jpg) no-repeat center center/cover;
+                            }
+                        }
+                    }
+                }
+
+                .detailes-pane {
+                    width: 100%;
+                    height: 100vh;
+
+                    .down-down {
+                        height: 10%;
+                    }
+                }
+            }
+            .sale-pane {
+                width: 100%;
+
+                .with-border {
+                    height: 33%;
+                }
+            }
+        }
+    }
+}

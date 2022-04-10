@@ -53,6 +53,77 @@ main {
 
             .image-pane {
                 width: 60%;
+                display: flex;
+                flex-direction: row;
+
+                .image-container {
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    padding: 1.3rem;
+
+                    .little {
+                        height: 300px;
+                        width: 40px;
+                        // padding: 1.3rem;
+                        // position: sticky;
+
+    
+                        .preview-1 {
+                            width: 38px;
+                            height: 50px;
+                            background: url(/Assets/Img/little-1.jpg) no-repeat center center/cover;
+                            border: rgba(0, 0, 0, 0.385) 1px solid;
+                            margin-bottom: 0.6rem;
+                            cursor: pointer;
+
+                            &:hover {
+                                border: #ffb514 1px solid;
+                                box-shadow: 1px 1px 2px 1px #ffd814c5, -1px -1px 2px 1px #ffd814c5;
+                            }
+                        }
+
+                        .preview-2 {
+                            width: 38px;
+                            height: 50px;
+                            background: url(/Assets/Img/watch-2.jpg) no-repeat center center/cover;
+                            border: rgba(0, 0, 0, 0.385) 1px solid;
+                            margin-bottom: 0.6rem;
+                            cursor: pointer;
+
+                            &:hover {
+                                border: #ffb514 1px solid;
+                                box-shadow: 1px 1px 2px 1px #ffd814c5, -1px -1px 2px 1px #ffd814c5;
+                            }
+                        }
+
+                        .preview-3 {
+                            width: 38px;
+                            height: 50px;
+                            background: url(/Assets/Img/watch-3.jpg) no-repeat center center/cover;
+                            border: rgba(0, 0, 0, 0.385) 1px solid;
+                            margin-bottom: 1rem;
+                            cursor: pointer;
+
+                            &:hover {
+                                border: #ffb514 1px solid;
+                                box-shadow: 1px 1px 2px 1px #ffd814c5, -1px -1px 2px 1px #ffd814c5;
+                            }
+                        }
+                    }
+
+                    .big-pic {
+                        width: 95%;
+                        height: 100%;
+                        text-align: center;
+
+                        .pic {
+                            height: 100%;
+                            background: url(/Assets/Img/watch-1.jpg) no-repeat center center;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
             }
     
             .detailes-pane {
@@ -159,15 +230,93 @@ main {
             }
 
             .with-border {
+                // display: flex;
+                // flex-direction: column;
                 border: #ccc 1px solid;
                 border-radius: 5px;
-                height: 70%;
+                height: 90%;
                 width: 90%;
-                padding: 1rem;
+                padding: 0 1.7rem;
+
+                h2 {
+                    font-size: 18px;
+                    color: #007600;
+                }
+
+                select {
+                    border-radius: 10px;
+                    font-size: 11px;
+                    background: rgb(229, 225, 225);
+                    color: #0f1111;
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+
+                .round-btn {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                    padding: 0.5rem;
+                    // line-height: 19px;
+                    border-radius: 30px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .btn-cart {
+                    background: #FFD814;
+                    &:hover {
+                        background: #ffc414;
+                    }
+                }
+
+                .btn-buy {
+                    background: #FFA41C;
+                    &:hover {
+                        background: #ff991c;
+                    }
+                }
+
+                .border {
+                    width: 100%;
+                    height: 30px;
+                    border-bottom: 1px rgba(0, 0, 0, 0.19) solid;
+                }
+
+                .btn-list {
+                    width: 100%;
+                    text-align: start;
+                    padding: 0.3rem ;
+                    cursor: pointer;
+                    margin-top: 5px;
+                }
             }
 
             .icons {
+                margin-top: 10px;
+                // width: 90%;
+                a {
+                    display: inline-block;
+                    width: 18px;
+                    height: 15px;
+                    background: url(/Assets/Img/_email_add_app_essential_icon.png) no-repeat center center/cover;
+                }
+                .facebook {
+                    background: url(/Assets/Img/_facebook_social\ media_social_icon.png) no-repeat center center/cover;
+                }
+                .twitter {
+                    background: url(/Assets/Img/_bird_tweet_twitter_twitter\ logo_icon.png) no-repeat center center/cover;
+                }
+                .pinterest {
+                    background: url(/Assets/Img/_inspiration_pin_pinned_pinterest_social\ network_icon.png) no-repeat center center/cover;
+                }
 
+                button {
+                    background: #fff;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                    padding: 0.3rem 1rem;
+                    border: 1px #ccc solid;
+                }
             }
         }
     }
