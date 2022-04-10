@@ -27,6 +27,35 @@
   font-family: "Amazon Ember";
   font-weight: 700;
   src: url(https://m.media-amazon.com/images/S/sash/KFPk-9IF4FqAqY-.woff2) format("woff2"), url(https://m.media-amazon.com/images/S/sash/mzVbGSgvdBfRLX9.woff) format("woff"); }
+footer {
+  max-width: 1500px;
+  height: 30vh;
+  margin: 10px 5vw; }
+  footer .tag {
+    height: 15%; }
+  footer .carousel {
+    display: flex;
+    height: 90%;
+    width: 100%; }
+    footer .carousel .arrow {
+      width: 38px;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      footer .carousel .arrow button {
+        padding: 0.5rem;
+        background: #fff;
+        border: 1px rgba(0, 0, 0, 0.225) solid;
+        border-radius: 10px; }
+    footer .carousel .table {
+      height: 100%;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+@media (max-width: 800px) {
+  footer {
+    display: none; } }
 main {
   display: flex;
   flex-direction: column;
@@ -245,8 +274,7 @@ main {
     flex-direction: column; }
     main .panes .container {
       flex-direction: column;
-      width: 100%;
-      height: 200vh; }
+      width: 100%; }
       main .panes .container .image-pane {
         width: 100%;
         height: 100vw; }
